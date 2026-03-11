@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # Servidor Web (Apache + PHP)
+  web:
+    build: .
+    container_name: weather_web
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html  # <-- Esto hace que tus cambios en VS Code sean instantáneos
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_NAME=weather_db
+      - DB_USER=admin
+      - DB_PASS=admin123
+
+  # Base de Datos (MariaDB)
+  db:
+    image: mariadb:10.11
+    container_name: weather_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: weather_db
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin123
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  db_data:
