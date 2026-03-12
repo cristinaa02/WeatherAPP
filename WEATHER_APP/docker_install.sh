@@ -1,14 +1,14 @@
 #!/bin/bash
 
-echo "--- Instalando Docker y Docker Compose ---"
+echo "--- Instalando herramientas ---"
 sudo apt-get update
 sudo apt-get install -y docker.io docker-compose
 
-# Añadir al usuario vagrant al grupo docker para evitar usar sudo después
-sudo usermod -aG docker vagrant
+echo "--- Bajando código ---"
+# git clone https://github.com/cristinaa02/WeatherAPP.git
 
-echo "--- Levantando los contenedores desde /vagrant ---"
-cd /vagrant
-sudo docker-compose up -d
+echo "--- Desplegando ---"
+cd WeatherAPP
+sudo docker-compose up -d --build
 
-echo "--- Proceso finalizado. Accede a http://192.168.1.5:8080 ---"
+echo "--- Proceso finalizado ---"

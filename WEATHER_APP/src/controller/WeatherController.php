@@ -53,7 +53,7 @@ class WeatherController {
 
             $html = "
                 <div class='weather-info' style='width: 100%; text-align: center; margin-top: 20px;'>
-                    <h3 style='margin-bottom: 25px; color: white;'>📍 Ciudad: $nombre</h3>
+                    <h3 style='margin-bottom: 25px; color: white;'>Ciudad: $nombre</h3>
                     <div style='display: flex; flex-direction: column; gap: 15px;'>
                         <a href='index.php?action=actual&lat=$lat&lon=$lon&name=" . urlencode($nombre) . "' class='btn-lista' style='display: block; background: rgba(255,255,255,0.2); padding: 15px; border-radius: 12px; text-decoration: none; color: white; font-weight: 600; border: 1px solid rgba(255,255,255,0.1);'>Ver Clima Hoy</a>
                         <a href='index.php?action=porHoras&lat=$lat&lon=$lon' class='btn-lista' style='display: block; background: rgba(255,255,255,0.2); padding: 15px; border-radius: 12px; text-decoration: none; color: white; font-weight: 600; border: 1px solid rgba(255,255,255,0.1);'>Previsión por Horas</a>
@@ -67,7 +67,7 @@ class WeatherController {
 
         $this->vista($html);
         } else {
-            $this->vista("<p style='color:red;'>❌ No se ha encontrado la ciudad: " . $ciudadInput . "</p>");
+            $this->vista("<p style='color:red;'>No se ha encontrado la ciudad: " . $ciudadInput . "</p>");
         }
     }
 
