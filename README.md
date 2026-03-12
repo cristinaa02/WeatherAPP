@@ -16,6 +16,8 @@ Puedes probar la aplicación funcionando en AWS aquí: [http://52.206.56.65](htt
 
 ![Captura de la aplicación en AWS](imagen-web.png)
 
+> **Nota:** Si el enlace con la IP elástica no carga, es posible que la sesión del laboratorio de AWS haya expirado.
+
 ---
 
 ## Descripción
