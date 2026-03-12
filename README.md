@@ -3,7 +3,7 @@
 Una web para consultar el pronóstico del tiempo, desarrollada con **PHP 8.2** y desplegada en **AWS** utilizando **Docker**.
 
 ##  índice
-1. [Web (Demo en vivo)](#web)
+1. [Web](#web)
 2. [Descripción](#descripción)
 3. [Estructura del proyecto](#estructura)
 4. [Tecnologías utilizadas](#tecnologías-utilizadas)
@@ -11,7 +11,7 @@ Una web para consultar el pronóstico del tiempo, desarrollada con **PHP 8.2** y
 
 ---
 
-## WEB
+## Web
 Puedes probar la aplicación funcionando en AWS aquí: [http://tu-ip-de-aws](http://tu-ip-de-aws)
 
 ---
@@ -53,6 +53,6 @@ Para desplegar esta aplicación en una instancia EC2 de AWS:
 1. **Conectarse a la instancia AWS** vía SSH.
 2. **Clona el repositorio:**
    ```bash
-   git clone [https://github.com/cristinaa02/WeatherAPP.git](https://github.com/cristinaa02/WeatherAPP.git)
+   git clone https://github.com/cristinaa02/WeatherAPP.git
 3. **Entrar en la carpeta, dar permisos al .sh (chmod) y ejecutar el script**.
 4. **Visuzalizaz con la IP de AWS la Web**
