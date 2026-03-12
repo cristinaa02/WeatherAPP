@@ -12,7 +12,7 @@ Una web para consultar el pronóstico del tiempo, desarrollada con **PHP 8.2** y
 ---
 
 ## Web
-Puedes probar la aplicación funcionando en AWS aquí: [http://ip](http://ip)
+Puedes probar la aplicación funcionando en AWS aquí: [http://52.206.56.65](http://52.206.56.65)
 
 ---
 
