@@ -51,8 +51,8 @@ El proyecto está organizado de la siguiente manera:
 Para desplegar esta aplicación en una instancia EC2 de AWS:
 
 1. **Conectarse a la instancia AWS** vía SSH.
-2. **Clona el repositorio:**
+2. **Clonar el repositorio:**
    ```bash
    git clone https://github.com/cristinaa02/WeatherAPP.git
 3. **Entrar en la carpeta, dar permisos al .sh (chmod) y ejecutar el script**.
-4. **Visuzalizaz con la IP de AWS la Web**
+4. **Visualizar con la IP de AWS la Web**.
