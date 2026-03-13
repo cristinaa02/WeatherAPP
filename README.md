@@ -12,7 +12,7 @@ Una web para consultar el pronóstico del tiempo, desarrollada con **PHP 8.2** y
 ---
 
 ## Web
-Puedes probar la aplicación funcionando en AWS aquí: [http://52.206.56.65](http://52.206.56.65)
+Puedes probar la aplicación funcionando en AWS aquí: [http://weathercrisapp.redirectme.net](http://weathercrisapp.redirectme.net)
 
 ![Captura de la aplicación en AWS](imagen-web.png)
 
